@@ -1,0 +1,52 @@
+{
+  "manifest": {
+    "name": "standard-focus",
+    "version": "1.1.2",
+    "description": "Lint your code with StandardJS and focus on one error at a time.",
+    "main": "index.js",
+    "scripts": {
+      "test": "standard",
+      "fix": "standard --fix",
+      "start": "node src/index.js"
+    },
+    "bin": {
+      "standard-focus": "src/index.js"
+    },
+    "keywords": [
+      "standard",
+      "focus",
+      "test",
+      "style"
+    ],
+    "author": {
+      "name": "Alberto Miranda"
+    },
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/codealchemist/standard-focus.git"
+    },
+    "license": "MIT",
+    "dependencies": {
+      "clivas": "^0.2.0",
+      "gaze": "^1.1.2",
+      "line-replace": "^1.0.1",
+      "standard": "^8.6.0",
+      "yargs": "^6.6.0"
+    },
+    "_registry": "npm",
+    "_loc": "/Users/henryseed/.hyper_plugins/cache/v1/npm-standard-focus-1.1.2-f2f13b6b5e90d223d5a1eed82b4f69b7e85df069/package.json",
+    "readmeFilename": "README.md",
+    "readme": "# standard-focus\nLint your code with StandardJS and focus on one error at a time.\n\n![screenshot](https://cldup.com/KgYRC8SNwu.gif)\n\n## Install\n\n`npm install --save-dev standard-focus`\n\n## Usage\n\nYou can use `standard-focus` just like [StandardJS](https://github.com/feross/standard) in your `package.json` scripts:\n\n```\n{\n  \"name\": \"my-cool-package\",\n  \"devDependencies\": {\n    \"standard-focus\": \"*\"\n  },\n  \"scripts\": {\n    \"test\": \"standard-focus && node my-tests.js\",\n    \"just-standard-focus\": \"standard-focus\"\n  }\n}\n```\n\n## Autofix errors\n\nPressing the ENTER key will tell `standard-focus` to do its best to fix the current error.\nIf the error can't be automatically fixed it will let you know so you can fix it manually.\nAfter each error is fixed the target file will be updated.\n\n## Why?\n\nI love using [StandardJS](https://github.com/feross/standard) but I wanted to completely focus on fixing one line at a time.\nThis is exactly what you can do with `standard-focus`.\n\n## What's all about?\n\nPlease, see [StandardJS](https://github.com/feross/standard) for further reference.\n"
+  },
+  "artifacts": [],
+  "remote": {
+    "resolved": "https://registry.yarnpkg.com/standard-focus/-/standard-focus-1.1.2.tgz#f2f13b6b5e90d223d5a1eed82b4f69b7e85df069",
+    "type": "tarball",
+    "reference": "https://registry.yarnpkg.com/standard-focus/-/standard-focus-1.1.2.tgz",
+    "hash": "f2f13b6b5e90d223d5a1eed82b4f69b7e85df069",
+    "registry": "npm",
+    "packageName": "standard-focus"
+  },
+  "registry": "npm",
+  "hash": "f2f13b6b5e90d223d5a1eed82b4f69b7e85df069"
+}

@@ -1,0 +1,61 @@
+{
+  "manifest": {
+    "name": "line-replace",
+    "version": "1.0.2",
+    "description": "Replace a line in a file with passed string.",
+    "main": "src/line-replace.js",
+    "scripts": {
+      "test-focus": "standard-focus",
+      "test": "standard && mocha",
+      "test-watch": "mocha --watch --recursive",
+      "start": "node ./bin/index.js"
+    },
+    "bin": {
+      "line-replace": "./bin/index.js"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/codealchemist/line-replace.git"
+    },
+    "keywords": [
+      "line",
+      "replace"
+    ],
+    "author": {
+      "name": "Alberto Miranda"
+    },
+    "license": "MIT",
+    "bugs": {
+      "url": "https://github.com/codealchemist/line-replace/issues"
+    },
+    "homepage": "https://github.com/codealchemist/line-replace#readme",
+    "dependencies": {},
+    "devDependencies": {
+      "chai": "^3.5.0",
+      "mocha": "^3.2.0",
+      "standard-focus": "^1.1.1"
+    },
+    "standard": {
+      "globals": [
+        "describe",
+        "it",
+        "beforeEach"
+      ]
+    },
+    "_registry": "npm",
+    "_loc": "/Users/henryseed/.hyper_plugins/cache/v1/npm-line-replace-1.0.2-b1995da54060d671c449196fa228395f0faaea47/package.json",
+    "readmeFilename": "README.md",
+    "readme": "# line-replace\nReplace a line in a file with passed string.\n\n## Install\n\nGlobal, for command line usage:\n`npm install -g line-replace`\n\nLocal, for programatic usage in your project:\n`npm install --save line-replace`\n\n## Command line usage\n\n```\n    USAGE:\n      line-replace [file]:[line] [[string]]\n\n    EXAMPLE:\n      line-replace sample.txt:7 'New content for line seven.'\n\n\n    Passed string will replace passed line number on passed file.\n    If string is not provided, the line will be cleared.\n```\n\n## Programatic usage\n\n```\nconst lineReplace = require('line-replace')\nlineReplace({\n  file: 'a-file.txt',\n  line: 42,\n  text: 'Answer to the Ultimate Question of Life, the Universe, and Everything.',\n  addNewLine: true,\n  onReplace\n})\n\nfunction onReplace({file, line, text, replacedText}) {\n\n}\n\n```\n\n`addNewLine` defaults to `true`, which doesn't add or remove\nlines from the original document.\n\nSetting it to `false` is the equivalent of removing the passed line and appending\nthe passed text to the next line.\n\nFor example, with the following content:\n```\nFirst line.\nSecond line.\nThird line.\n```\n\nRunning:\n```\nlineReplace({\n  file: 'the-file.txt',\n  line: 2,\n  text: 'LOOK: ',\n  addNewLine: false,\n  onReplace\n})\n```\n\nWill result in:\n```\nFirst line.\nLOOK: Third line.\n```\n\n## Should it work with big files?\n\nYeah. `line-replace` uses read and write streams, so it should work ok with big files.\n\nEnjoy!\n"
+  },
+  "artifacts": [],
+  "remote": {
+    "resolved": "https://registry.yarnpkg.com/line-replace/-/line-replace-1.0.2.tgz#b1995da54060d671c449196fa228395f0faaea47",
+    "type": "tarball",
+    "reference": "https://registry.yarnpkg.com/line-replace/-/line-replace-1.0.2.tgz",
+    "hash": "b1995da54060d671c449196fa228395f0faaea47",
+    "registry": "npm",
+    "packageName": "line-replace"
+  },
+  "registry": "npm",
+  "hash": "b1995da54060d671c449196fa228395f0faaea47"
+}

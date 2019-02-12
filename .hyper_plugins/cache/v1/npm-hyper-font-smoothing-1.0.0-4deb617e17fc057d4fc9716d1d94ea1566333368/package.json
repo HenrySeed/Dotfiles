@@ -1,0 +1,36 @@
+{
+  "name": "hyper-font-smoothing",
+  "main": "index.js",
+  "description": "Extension for subpixel-antialiased font smoothing in Hyper",
+  "author": "Ali Ukani <ali.ukani@gmail.com>",
+  "license": "MIT",
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "hyperterm",
+    "hyper",
+    "hyper.app"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ali/hyper-font-smoothing.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ali/hyper-font-smoothing/issues"
+  },
+  "homepage": "https://github.com/ali/hyper-font-smoothing#readme",
+  "scripts": {
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+  },
+  "devDependencies": {
+    "cz-conventional-changelog": "^1.2.0",
+    "semantic-release": "^4.3.5"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "version": "1.0.0"
+}

@@ -1,0 +1,56 @@
+{
+  "manifest": {
+    "name": "hyper-transparent",
+    "version": "1.2.2",
+    "description": "Hyper plugin to easily set window transparency.",
+    "main": "index.js",
+    "scripts": {
+      "test": "standard && mocha --reporter spec",
+      "test-watch": "mocha --watch --reporter spec",
+      "test-focus": "standard-focus"
+    },
+    "keywords": [
+      "hyper",
+      "transparent"
+    ],
+    "author": {
+      "name": "Alberto Miranda",
+      "email": "b3rt.js@gmail.com"
+    },
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/codealchemist/hyper-transparent.git"
+    },
+    "license": "MIT",
+    "dependencies": {
+      "color": "^2",
+      "standard-focus": "^1.1.2"
+    },
+    "devDependencies": {
+      "chai": "^3.5.0",
+      "mocha": "^3.1.2"
+    },
+    "standard": {
+      "globals": [
+        "describe",
+        "it",
+        "beforeEach"
+      ]
+    },
+    "_registry": "npm",
+    "_loc": "/Users/henryseed/.hyper_plugins/cache/v1/npm-hyper-transparent-1.2.2-9bc991479747751b930c84f5a3157952aa11db79/package.json",
+    "readmeFilename": "README.md",
+    "readme": "# hyper-transparent [![Build Status](https://travis-ci.org/codealchemist/hyper-transparent.svg?branch=master)](https://travis-ci.org/codealchemist/hyper-transparent)\n[Hyper](https://hyper.is) plugin to easily set window transparency and vibrancy.\n\nAlso allows you to easily set vibrancy on OSX.\n\n![screenshot](https://cldup.com/lBSydSyCwc.gif)\n\n\n## Install\n\nOpen Hyper config, find `plugins` and add `'hyper-transparent'` there:\n\n```\nplugins: [\n  'hyper-transparent'\n],\n```\n\nYou'll find up to date plugin install instructions in the official [Hyper](https://hyper.is) site.\n\n\n## Change background color\n\nOpen **Hyper** config and change `backgroundColor` at config root level.\n\nInput any HEX color you like.\n\n**HyperTransparent** will remember this color and apply transparency to it.\n\n\n## Set default config\n\nYou can also persist a default config for **HyperTransparent** so your preferred settings are kept even after upgrading or reinstalling it.\n\nAdd the following config to **Hyper**'s config:\n\n```\nhyperTransparent: {\n  backgroundColor: '#4b4',\n  opacity: 0.2,\n  vibrancy: '' // ['', 'dark', 'medium-light', 'ultra-dark']\n}\n```\n\nThis config will be preferred, so every time you reload the app it will always\nbe loaded.\n\n\n\n## About Hyper\nHyper is a terminal app written with web technologies using [Electron](http://electron.atom.io).\n\nCool stuff huh? ;)\n"
+  },
+  "artifacts": [],
+  "remote": {
+    "resolved": "https://registry.yarnpkg.com/hyper-transparent/-/hyper-transparent-1.2.2.tgz#9bc991479747751b930c84f5a3157952aa11db79",
+    "type": "tarball",
+    "reference": "https://registry.yarnpkg.com/hyper-transparent/-/hyper-transparent-1.2.2.tgz",
+    "hash": "9bc991479747751b930c84f5a3157952aa11db79",
+    "registry": "npm",
+    "packageName": "hyper-transparent"
+  },
+  "registry": "npm",
+  "hash": "9bc991479747751b930c84f5a3157952aa11db79"
+}

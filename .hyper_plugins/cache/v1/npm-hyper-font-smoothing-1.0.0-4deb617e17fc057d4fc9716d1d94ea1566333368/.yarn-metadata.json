@@ -1,0 +1,56 @@
+{
+  "manifest": {
+    "name": "hyper-font-smoothing",
+    "main": "index.js",
+    "description": "Extension for subpixel-antialiased font smoothing in Hyper",
+    "author": {
+      "name": "Ali Ukani",
+      "email": "ali.ukani@gmail.com"
+    },
+    "license": "MIT",
+    "files": [
+      "index.js"
+    ],
+    "keywords": [
+      "hyperterm",
+      "hyper",
+      "hyper.app"
+    ],
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/ali/hyper-font-smoothing.git"
+    },
+    "bugs": {
+      "url": "https://github.com/ali/hyper-font-smoothing/issues"
+    },
+    "homepage": "https://github.com/ali/hyper-font-smoothing#readme",
+    "scripts": {
+      "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+    },
+    "devDependencies": {
+      "cz-conventional-changelog": "^1.2.0",
+      "semantic-release": "^4.3.5"
+    },
+    "config": {
+      "commitizen": {
+        "path": "./node_modules/cz-conventional-changelog"
+      }
+    },
+    "version": "1.0.0",
+    "_registry": "npm",
+    "_loc": "/Users/henryseed/.hyper_plugins/cache/v1/npm-hyper-font-smoothing-1.0.0-4deb617e17fc057d4fc9716d1d94ea1566333368/package.json",
+    "readmeFilename": "README.md",
+    "readme": "# hyper-font-smoothing\n\nExtension for subpixel-antialiased font smoothing in [Hyper][].\n\n[hyperterm]: https://github.com/zeit/hyperterm\n\n## How to use\n\nAdd `hyper-font-smoothing` to `plugins` in `~/.hyper.js`:\n\n```js\n// Example ~/.hyperterm.js\nmodule.exports = {\n  plugins: [\n    \"hyper-font-smoothing\",\n  ],\n}\n```\n\n## Screenshots\n\nWith `hyper-font-smoothing`:\n\n![hyperterm with subpixel-antialiased font-smoothing](.github/subpixel-antialiased.png?raw=true)\n\nWithout `hyper-font-smoothing` (default):\n\n![hyperterm with default antialiased font-smoothing](.github/antialiased.png?raw=true)\n\n"
+  },
+  "artifacts": [],
+  "remote": {
+    "resolved": "https://registry.yarnpkg.com/hyper-font-smoothing/-/hyper-font-smoothing-1.0.0.tgz#4deb617e17fc057d4fc9716d1d94ea1566333368",
+    "type": "tarball",
+    "reference": "https://registry.yarnpkg.com/hyper-font-smoothing/-/hyper-font-smoothing-1.0.0.tgz",
+    "hash": "4deb617e17fc057d4fc9716d1d94ea1566333368",
+    "registry": "npm",
+    "packageName": "hyper-font-smoothing"
+  },
+  "registry": "npm",
+  "hash": "4deb617e17fc057d4fc9716d1d94ea1566333368"
+}
