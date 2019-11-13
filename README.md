@@ -23,5 +23,6 @@
 * Copy black-bar.coffee from dotFiles
 * Better snap tool
 
-
+### Disable Mac media keys opening iTunes
+* http://milgra.com/mac-media-key-forwarder.html
 
