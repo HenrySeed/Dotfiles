@@ -5,7 +5,7 @@ from installHeader import print_header
 import sys
 import os
 
-DEFAULT_PIC_FOLDER = '~/Pictures'
+DEFAULT_PIC_FOLDER = '~/Pictures/Wallpapers/'
 CURRENT_STEP = 1
 
 
@@ -25,7 +25,7 @@ def copyFiles(folder1, folder2):
         if name[0] == '.': continue
         os.system("cp {0}{1} {2}".format(folder1, name.replace(' ', '\ '), folder2))
 
-'''Installs a git repo, checking it isnt already instlaled first'''
+'''Installs a git repo, checking it isnt already installed first'''
 def installGitRepo(repoString, name):
     # Check if it is already there
     projName = repoString.split('/')[-1].split('.')[0]
@@ -45,13 +45,12 @@ def main():
 
     # 1) -------  Get pictures folder and copy wallpapers there  -------
     printStep("Saving Wallpapers")
-    # Checks with user for a custom location
-
     print('     Enter Pictures directory. Default pictures directory is ' + DEFAULT_PIC_FOLDER)
     picLocation = input('     (leave blank for default)\n     > ')
     if picLocation.strip() == "":
         picLocation = DEFAULT_PIC_FOLDER
     print('     Saving wallpapers to ' + picLocation + "...")
+    os.system("mkdir " + picLocation)
     copyFiles('./wallpapers/', picLocation)
 
 
