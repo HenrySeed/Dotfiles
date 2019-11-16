@@ -1,6 +1,8 @@
 # Dotfiles
  A script for me to simply load my preferences of zsh, alias etc
  
+ ![Imgur](https://i.imgur.com/e1wtJOn.png)
+ 
  ## Apps to install checklist
 * [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
 * [Steam](https://store.steampowered.com/about/)
