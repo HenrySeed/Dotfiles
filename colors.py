@@ -40,7 +40,7 @@ class colors:
     reset = '\033[0m'
 
 
-def crayon(string, fg='\033[30m', bg='\033[30m'):
-    return fg + bg + string + colors.reset
+def crayon(string, fg='\033[30m'):
+    return fg + string + colors.reset
 
 
