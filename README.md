@@ -14,22 +14,12 @@
 * [VSCode](https://code.visualstudio.com/)
 * [Developer Tools]() http://osxdaily.com/2014/02/12/install-command-line-tools-mac-os-x/
 * [VLC](https://www.videolan.org/index.html)
-
 * Unarchiver --app store
 * Adobe Photoshop CC
 * Adobe Illustrator CC
 * Adobe XD
- 
- ## macOS
- 
- ### macOS only apps
- * [Ubersicht](http://tracesof.net/uebersicht/)
-  * Copy black-bar.coffee from dotFiles
 * Better snap tool
 * [Hyper.js](https://hyper.is/)
-
-### Disable Mac media keys opening iTunes
-* http://milgra.com/mac-media-key-forwarder.html
 
 
 ## Windows10
