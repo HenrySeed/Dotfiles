@@ -14,13 +14,11 @@
 * [VSCode](https://code.visualstudio.com/)
 * [Developer Tools]() http://osxdaily.com/2014/02/12/install-command-line-tools-mac-os-x/
 * [VLC](https://www.videolan.org/index.html)
+* [Hyper.js](https://hyper.is/)
 * Unarchiver --app store
 * Adobe Photoshop CC
 * Adobe Illustrator CC
-* Adobe XD
 * Better snap tool
-* [Hyper.js](https://hyper.is/)
-
 
 ## Windows10
 
